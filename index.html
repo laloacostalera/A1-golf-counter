@@ -3,21 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Mi contador de Golf</title>
-    <link href="style.css" rel="stylesheetg">
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Golfito online</h1>
-  <p> Una app para controlar tus tiros. </p>
-      <h2>Golpes</h2>
-        <input id="golpes" type="number" name="golpes" placeholder="introduce tus golpes!">
-        <h2>Par</h2>
-        <input id="par" type="number" name="par" placeholder="introduce aquí el par!">
+  <div class="padre">
+    <header class="header">
+      <div class="titulo">
+        <h1>chequeá tus tiros</h1>
+      </div>
+    </header>
+    <section class="section">
+        <article class="article">
+          <h2>
+            golpes
+          </h2>
+          <input id="golpes" type="number" name="golpes" placeholder="introduce tus golpes!">
+        </article>
+        <article class="article">
+          <h2>
+            par
+          </h2>
+          <input id="par" type="number" name="par" placeholder="introduce aquí el par!">
+        </article>
+        <article class="boton">
+          <button class="buttonclick" onclick="sub()">Calcular</button>
+        </article>
+    </section>
+    <footer>
+      <p id="respuesta"></p>
+    </footer>    
     
-    <button onclick="sub()">Calcular</button>
     
-  
-  <script src="script.js"></script>
+      
+    
+    <script src="script.js"></script>
+  </div>
 </body>
 </html>
