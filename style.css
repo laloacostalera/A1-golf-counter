@@ -59,20 +59,21 @@
             align-items: center;
             height: 2em;
             width: 4em;
-            font-family: 'Dancing Script', cursive;
+            font-family: 'Shadows Into Light', cursive;
             font-size: 3em;
 
         }
-
         .buttonclick:hover {
             color: #1b2f31;
             background-color: #1cc49d;
         }
+
     .footer {
         border-style: solid;
         border-width: 0.5em;
         border-radius: 5%;
         border-color: var(--color-pastel);
+        font-size: 2em;
     }
 
 @media all and (max-width: 800px) {
