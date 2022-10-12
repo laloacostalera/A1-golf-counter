@@ -1,19 +1,5 @@
 function miResultado(golpes, par){
-    // if (GO == 1)
-    // console.log("Hole-in-One!");
-    // else if (GO <= PA - 2)
-    // console.log("Eagle");
-    // else if (GO <= PA - 1)
-    // console.log("Birdie");
-    // else if (GO == PA)
-    // console.log("Par");
-    // else if (GO >= PA + 1)
-    // console.log("Bogey"); //hasta acá funciona bien, desde acá da error
-    // else if (GO >= PA + 2)
-    // console.log("Double Bogey");
-    // else if (GO >= PA + 3)
-    // console.log("Go Home!");
-
+    
     if (golpes === "" || par === "") alert("Debe ingresar golpes y par");
 
     // comprobacion de datos
@@ -22,25 +8,23 @@ function miResultado(golpes, par){
 
     let resultado = g - p;
 
-    if (g === 1) console.log("Hole-in-One!");
+    if (resultado === - 2) document.getElementById("respuesta").innerHTML="Eagle";
+    if (resultado === -1) document.getElementById("respuesta").innerHTML="Birdie";
+    if (resultado === 0) document.getElementById("respuesta").innerHTML="Par";
+    if (resultado === 1) document.getElementById("respuesta").innerHTML="Bogey";
+    if (resultado === 2) document.getElementById("respuesta").innerHTML="Double Bogey";
+    if (resultado >= 3) document.getElementById("respuesta").innerHTML="Go Home!";
 
-    if (resultado === - 2) console.log("Eagle");
-    if (resultado === -1) console.log("Birdie");
-    if (resultado === 0) console.log("Par");
-    if (resultado === 1) console.log("Bogey");
-    if (resultado === 2) console.log("Double Bogey");
-    if (resultado >= 3) console.log("Go Home!");
+    if (g === 1) document.getElementById("respuesta").innerHTML="Hole in One!";
 }
 
 function sub(){
     let golpes = document.getElementById("golpes").value;
     let par = document.getElementById("par").value;
-    console.log("Tus Golpes son "+ golpes +" y el par es de " + par + " \n por tanto tienes un:");
+    // Hay que dar esta respuesta en un párrafo
+    //("Tus Golpes son "+ golpes +" y el par es de " + par + " \n por tanto tienes un:");
     miResultado(golpes, par)
 };
 
-//const
-//scope
-// miResultado(golpes, par);
-// miResultado(7, 4);
+
 console.log("Torneo de Golf 2022. Todos los derechos reservados.")

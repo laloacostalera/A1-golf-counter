@@ -14,8 +14,9 @@
     }
 
     .text-field {
-        font-family: 'Shadows Into Light', cursive;
-        font-size: 1em;
+        font-family: 'Dancing Script', cursive;
+        font-size:  2em;
+        text-align: center;
     }
 
 .padre {
@@ -53,14 +54,14 @@
         .buttonclick {
             color: var(--color-pastel);
             background-color: var(--color-strong, black);
-            border-radius: 50px;
+            border-radius: 10px;
             border-color: var(--color-pastel);
             justify-content: center;
             align-items: center;
             height: 2em;
-            width: 4em;
+            width: auto;
             font-family: 'Shadows Into Light', cursive;
-            font-size: 3em;
+            font-size: 4em;
 
         }
         .buttonclick:hover {
@@ -73,6 +74,7 @@
         border-width: 0.5em;
         border-radius: 5%;
         border-color: var(--color-pastel);
+        background-color: var(--color-pastel);
         font-size: 2em;
     }
 
