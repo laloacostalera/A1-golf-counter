@@ -10,12 +10,12 @@
     }
 
     p {
-    font-family: 'Poppins', sans-serif;
+        font-family: 'Shadows Into Light', cursive;
     }
 
     .text-field {
-        font-family: 'Poppins', sans-serif;
-        font-size: 0,75em;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 1em;
     }
 
 .padre {
@@ -28,7 +28,7 @@
     background-color: var(--color-background, white);
     display: flex;
     flex-flow: column nowrap;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Dancing Script', cursive;
     align-content: center; 
     text-align: center;  
 }
@@ -57,11 +57,10 @@
             border-color: var(--color-pastel);
             justify-content: center;
             align-items: center;
-            height: 3em;
-            width: 8em;
-            font-family:'Roboto', sans-serif;
-            font-size: 1.5em;
-            font-weight: 300;
+            height: 2em;
+            width: 4em;
+            font-family: 'Dancing Script', cursive;
+            font-size: 3em;
 
         }
 
@@ -69,6 +68,12 @@
             color: #1b2f31;
             background-color: #1cc49d;
         }
+    .footer {
+        border-style: solid;
+        border-width: 0.5em;
+        border-radius: 5%;
+        border-color: var(--color-pastel);
+    }
 
 @media all and (max-width: 800px) {
     .section {
