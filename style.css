@@ -9,10 +9,6 @@
         background-color: var(--color-strong, teal);
     }
 
-    input {
-        display: block;
-    }
-
     p {
         font-family: 'Shadows Into Light', cursive;
     }
