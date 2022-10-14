@@ -9,6 +9,10 @@
         background-color: var(--color-strong, teal);
     }
 
+    input {
+        display: block;
+    }
+
     p {
         font-family: 'Shadows Into Light', cursive;
     }
@@ -17,6 +21,7 @@
         font-family: 'Dancing Script', cursive;
         font-size:  1.5em;
         text-align: center;
+        width: min-content;
     }
 
 .padre {
@@ -79,6 +84,9 @@
     }
 
 @media all and (max-width: 800px) {
+    *{
+        padding: 0;
+    }
     .section {
         flex-flow:column;
     }
