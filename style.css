@@ -1,44 +1,63 @@
 * {
-    margin: 10px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    --color-background: #483838;
+    --color-strong: #EB1D36;
+    --color-llamativo: #A5F1E9;
+    --color-important: #1cc49d;
+    --color-pastel: #FFEEAF;
+    --color-black: #1b2f31;
 }
 
     h1 {
         color: var(--color-pastel, yellow);
-        background-color: var(--color-strong, teal);
+        background-color: var(--color-strong, red);
+        font-family: 'Shadows Into Light', cursive;
+        font-weight: 400;
+        padding: 10px;
     }
 
     p {
         font-family: 'Shadows Into Light', cursive;
     }
 
-    .text-field {
-        font-family: 'Dancing Script', cursive;
-        font-size:  1.5em;
-        text-align: center;
-        width: min-content;
+    h1, input, button {
+        margin: 10px auto 10px;
+        border: 2px solid var(--color-black);
+        border-radius: 5px;
+        padding: 10px;
     }
 
+.text-field {
+    font-family: 'Dancing Script', cursive;
+    font-size:  1.5em;
+    text-align: center;
+    width: min-content;
+}
+
 .padre {
-    --color-background: #E1FFEE;
-    --color-strong: #7FBCD2;
-    --color-llamativo: #A5F1E9;
-    --color-important: #1cc49d;
-    --color-pastel: #FFEEAF;
-    --color-black: #1b2f31;
+
     background-color: var(--color-background, white);
     display: flex;
     flex-flow: column nowrap;
     font-family: 'Dancing Script', cursive;
     align-content: center; 
-    text-align: center;  
+    text-align: center; 
 }
 
     .section {
+        border: 2px solid var(--color-black);
+        background-color: var(--color-black);
         display: flex;
         flex-flow: row wrap;
         align-content: center;
+    }
+    
+    input:hover {
+        border: 2px solid var(--color-important);
+        background-color: var(--color-llamativo);
+        cursor:pointer
     }
     
         .article {
@@ -55,14 +74,14 @@
         .buttonclick {
             color: var(--color-pastel);
             background-color: var(--color-strong, black);
-            border-radius: 10px;
+            border-radius: 50%;
             border-color: var(--color-pastel);
             justify-content: center;
             align-items: center;
             height: 2em;
             width: auto;
             font-family: 'Shadows Into Light', cursive;
-            font-size: 4em;
+            font-size: 2em;
 
         }
         .buttonclick:hover {
@@ -71,12 +90,13 @@
         }
 
     .footer {
-        border-style: solid;
-        border-width: 0.5em;
-        border-radius: 5%;
+        border: 2px;
+        border-radius: 5px;
         border-color: var(--color-pastel);
         background-color: var(--color-pastel);
         font-size: 2em;
+        margin: 10px;
+        padding: 20px;
     }
 
 @media all and (max-width: 800px) {
