@@ -8,10 +8,14 @@
     --color-important: #1cc49d;
     --color-pastel: #FFEEAF;
     --color-black: #1b2f31;
+    --color-white: whitesmoke;
 }
 
+body {
+    background-color: var(--color-white);
+}
     h1 {
-        color: var(--color-pastel, yellow);
+        color: var(--color-white, whitesmoke);
         background-color: var(--color-strong, red);
         font-family: 'Shadows Into Light', cursive;
         font-weight: 400;
@@ -27,6 +31,21 @@
         border: 2px solid var(--color-black);
         border-radius: 5px;
         padding: 10px;
+        max-width: 600px;
+    }
+
+    button {
+        color:var(--color-pastel);
+    }
+    
+    input {
+        margin: 10px auto 10px;
+    }
+    
+    input:hover {
+        border: 2px solid var(--color-important);
+        background-color: var(--color-llamativo);
+        cursor:pointer
     }
 
 .text-field {
@@ -38,32 +57,27 @@
 
 .padre {
 
-    background-color: var(--color-background, white);
+    background-color: var(--color-white);
     display: flex;
     flex-flow: column nowrap;
     font-family: 'Dancing Script', cursive;
     align-content: center; 
-    text-align: center; 
+    text-align: center;
 }
 
     .section {
         border: 2px solid var(--color-black);
-        background-color: var(--color-black);
+        /* background-color: var(--color-black); */
         display: flex;
         flex-flow: row wrap;
         align-content: center;
-    }
-    
-    input:hover {
-        border: 2px solid var(--color-important);
-        background-color: var(--color-llamativo);
-        cursor:pointer
     }
     
         .article {
             flex: 1 1 40%;
             align-content: center;
             align-items: center;
+            min-width: 300px;
         }
 
         .boton {
@@ -71,37 +85,38 @@
         
         }
 
-        .buttonclick {
-            color: var(--color-pastel);
-            background-color: var(--color-strong, black);
-            border-radius: 50%;
-            border-color: var(--color-pastel);
-            justify-content: center;
-            align-items: center;
-            height: 2em;
-            width: auto;
-            font-family: 'Shadows Into Light', cursive;
-            font-size: 2em;
+    .buttonclick {
+        color: whitesmoke;
+        background-color: var(--color-strong, red);
+        border-radius: 1opx;
+        border-color: var(white);
+        justify-content: center;
+        align-items: center;
+        height: 2em;
+        width: auto;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 2em;
+        padding-bottom: 2em;
 
-        }
-        .buttonclick:hover {
-            color: #1b2f31;
-            background-color: #1cc49d;
-        }
+    }
+    .buttonclick:hover {
+        color: #1b2f31;
+        background-color: #1cc49d;
+    }
 
     .footer {
-        border: 2px;
-        border-radius: 5px;
-        border-color: var(--color-pastel);
-        background-color: var(--color-pastel);
+        background-color: var(--color-white);
         font-size: 2em;
-        margin: 10px;
+        max-width: 600px;
+        align-items: center;
+        margin: auto;;
         padding: 20px;
     }
 
 @media all and (max-width: 800px) {
     *{
-        padding: 0;
+        margin: 15px auto;
+        padding: 20 px;
     }
     .section {
         flex-flow:column;
